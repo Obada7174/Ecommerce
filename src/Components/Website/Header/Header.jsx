@@ -12,7 +12,10 @@ const Header = () => {
       <div className="container flex justify-between items-center mx-auto py-[19px]">
         <Logo />
         {currentUser.role !== "2001" && currentUser.role && (
-          <Link to="/dashboard" className="bg-black p-4">
+          <Link
+            to="/dashboard"
+            className="bg-primary rounded hover:opacity-90 p-3 font-bold "
+          >
             Dashboard
           </Link>
         )}

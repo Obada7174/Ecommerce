@@ -9,7 +9,7 @@ export const ContextProvider = ({ children }) => {
   const [update, setUpdate] = useState([]);
 
   const [currentUser, setCurrentUser] = useState({});
-  const products = JSON.parse(localStorage.getItem("cartProducts"));
+  const products = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
   const cartProductsTotal = products.reduce(
     (acc, product) => acc + Number(product.price),

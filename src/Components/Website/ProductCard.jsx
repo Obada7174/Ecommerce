@@ -2,21 +2,16 @@ import { Link } from "react-router-dom";
 import { FaCartPlus, FaHeart, FaShare } from "react-icons/fa";
 import Rating from "@mui/material/Rating";
 import { useStateContext } from "../../Contexts/ContextProvider";
-import { useRef } from "react";
 
 const ProductCard = ({ product }) => {
+  const { setUpdate } = useStateContext();
   const percentDiscount =
     product.discount && product.discount > 0
       ? Math.floor((product.discount / product.price) * 100)
       : null;
 
-  const products = JSON.parse(localStorage.getItem("cartProducts")) || [];
-  const cartProductsTotal = useRef(
-    products.reduce((acc, product) => acc + Number(product.price), 0),
-  );
-  localStorage.setItem("cartProductsTotal", cartProductsTotal.current);
-  const { setUpdate } = useStateContext();
   function addToCart(product) {
+    const products = JSON.parse(localStorage.getItem("cartProducts")) || [];
     products.push(product);
     localStorage.setItem("cartProducts", JSON.stringify(products));
     setUpdate((prev) => !prev);

@@ -15,7 +15,7 @@ export const DashboardContext = ({ children }) => {
     localStorage.getItem("colorTheme") || "#03C9D7",
   );
   const [currentMode, setCurrentMode] = useState(
-    localStorage.getItem("mode") || "Light",
+    localStorage.getItem("mode") || "Dark",
   );
   const [themeSettings, setThemeSettings] = useState(false);
   const setMode = (e) => {

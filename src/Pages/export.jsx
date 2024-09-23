@@ -1,0 +1,22 @@
+export { default as Login } from "./Auth/Login";
+export { default as Register } from "./Auth/Register";
+export { default as RequireAuth } from "./Auth/RequireAuth";
+export { default as Dashboard } from "./Dashboard/Dashboard";
+export { default as Home } from "./Website/Home";
+export { default as ProductDetails } from "./Website/ProductDetails";
+export { default as AllProducts } from "./Website/AllProducts";
+export { default as Checkout } from "./Website/Checkout";
+export { default as GoogleCallback } from "./Auth/GoogleCallback";
+// >>
+export { default as Ecommerce } from "./Dashboard/Ecommerce";
+// export { default as Orders } from "./Dashboard/Orders";
+// export { default as Employees } from "./Dashboard/Employees";
+export { default as Users } from "./Dashboard/Users/Users";
+export { default as Products } from "./Dashboard/Products/Products";
+export { default as AddProduct } from "./Dashboard/Products/AddProduct";
+export { default as EditProduct } from "./Dashboard/Products/EditProduct";
+export { default as AddUser } from "./Dashboard/Users/AddUser";
+export { default as AddCategory } from "./Dashboard/Categories/AddCategory";
+export { default as CategoriesManage } from "./Dashboard/Categories/CategoriesManage";
+export { default as Writer } from "./Dashboard/Writer";
+export { default as NotFound } from "./404/404";

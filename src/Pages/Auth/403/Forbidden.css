@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #f6d200; /* اللون الافتراضي */
+}
+
+.bg-gradient {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-color) 25%,
+    #181617 25%,
+    #181617 50%,
+    var(--primary-color) 50%,
+    var(--primary-color) 75%,
+    #181617 75%,
+    #181617 100%
+  );
+}
+
+.bg-text-pattern {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--primary-color) 10px,
+    #181617 10px,
+    #181617 20px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-warning {
+  background-color: var(--primary-color); /* لون الخلفية لكلمة Caution */
+}
+
+h1 span:before,
+h1 span:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #757575;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0px 60px 0 0px;
+}
+
+h1 span:before {
+  left: 37%;
+  transform: rotate(22deg);
+  top: -44%;
+}
+
+h1 span:after {
+  right: 34%;
+  transform: rotate(22deg);
+  top: 3%;
+}

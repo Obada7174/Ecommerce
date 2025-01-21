@@ -77,7 +77,7 @@ export default function Register() {
         </Link>
       </p>
       <Link
-        to="http://127.0.0.1:8000/login-google"
+        to="https://ecommerce-backend.obada-almaghribi.com/login-google"
         type="button"
         className="flex justify-center gap-2 items-center w-full text-center text-white bg-dark font-semibold py-3 rounded-lg shadow-xl hover:opacity-90 hover:drop-shadow-md"
       >
